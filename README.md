@@ -66,8 +66,6 @@ This project aims to predict customer response to marketing campaigns using mach
 | Random Forest (Ensemble) | TBD | TBD | TBD | TBD | TBD | TBD |
 | XGBoost (Ensemble) | TBD | TBD | TBD | TBD | TBD | TBD |
 
-*Note: Run the notebook `model/ML_Assignment_2.ipynb` in Google Colab to generate actual metrics*
-
 
 
 ## Author
