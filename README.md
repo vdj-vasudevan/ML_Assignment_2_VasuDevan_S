@@ -58,13 +58,13 @@ This project aims to predict customer response to marketing campaigns using mach
 ### Comparison Table
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
-|--------------|----------|-----|-----------|--------|----|----|
-| Logistic Regression | TBD | TBD | TBD | TBD | TBD | TBD |
-| Decision Tree | TBD | TBD | TBD | TBD | TBD | TBD |
-| KNN | TBD | TBD | TBD | TBD | TBD | TBD |
-| Naive Bayes | TBD | TBD | TBD | TBD | TBD | TBD |
-| Random Forest (Ensemble) | TBD | TBD | TBD | TBD | TBD | TBD |
-| XGBoost (Ensemble) | TBD | TBD | TBD | TBD | TBD | TBD |
+|--------------|----------|-----|-----------|--------|----|-----|
+| Logistic Regression | 0.883929 | 0.910369 | 0.666667 | 0.447761 | 0.535714 | 0.484526 |
+| Decision Tree | 0.832589 | 0.679457 | 0.442857 | 0.462687 | 0.452555 | 0.353915 |
+| KNN | 0.863839 | 0.798292 | 0.607143 | 0.253731 | 0.357895 | 0.331290 |
+| Naive Bayes | 0.803571 | 0.826067 | 0.400000 | 0.626866 | 0.488372 | 0.388544 |
+| Random Forest (Ensemble) | 0.879464 | 0.904748 | 0.724138 | 0.313433 | 0.437500 | 0.423861 |
+| XGBoost (Ensemble) | 0.890625 | 0.910409 | 0.695652 | 0.477612 | 0.566372 | 0.517982 |
 
 
 
