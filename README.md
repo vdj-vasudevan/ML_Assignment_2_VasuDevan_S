@@ -16,6 +16,9 @@ This project aims to predict customer response to marketing campaigns using mach
 - **Selected Features:** 26 features for modeling (excluding ID, Z_CostContact, Z_Revenue)
 - **Target Variable:** Response (Binary: 0 = No Response, 1 = Positive Response)
 - **Class Distribution:** Imbalanced binary classification problem
+  - Class 0 (No Response): 1,906 instances (85.1%)
+  - Class 1 (Positive Response): 334 instances (14.9%)
+  - Imbalance Ratio: ~5.7:1
 
 **Selected Features (26 features):**
 1. Year_Birth - Customer's year of birth
@@ -55,7 +58,16 @@ This project aims to predict customer response to marketing campaigns using mach
 
 ## Models Used
 
-### Comparison Table
+Six machine learning models were trained and evaluated to predict customer response:
+
+1. **Logistic Regression** - Linear model for binary classification
+2. **Decision Tree** - Non-linear tree-based classifier
+3. **K-Nearest Neighbors (KNN)** - Instance-based learning algorithm
+4. **Naive Bayes** - Probabilistic classifier based on Bayes' theorem
+5. **Random Forest** - Ensemble method using multiple decision trees
+6. **XGBoost** - Gradient boosting ensemble method
+
+### Performance Comparison
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |--------------|----------|-----|-----------|--------|----|-----|
