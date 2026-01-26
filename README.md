@@ -78,7 +78,52 @@ Six machine learning models were trained and evaluated to predict customer respo
 | Random Forest (Ensemble) | 0.879464 | 0.904748 | 0.724138 | 0.313433 | 0.437500 | 0.423861 |
 | XGBoost (Ensemble) | 0.890625 | 0.910409 | 0.695652 | 0.477612 | 0.566372 | 0.517982 |
 
+## Live Web Application
 
+🌐 **Access the live app here:** [Marketing Campaign Prediction App](https://vdj-vasudevan-ml-assignment-2-vasudevan-s-app-jx4vsl.streamlit.app/)
+
+### How to Use the App
+
+1. **Open the App**: Click the link above to access the live application
+
+2. **Expand Sidebar**: Click the arrow (>) on the top-left to open the sidebar
+
+3. **Select Model**: Choose from 6 available ML models:
+   - Logistic Regression
+   - Decision Tree
+   - K-Nearest Neighbors
+   - Naive Bayes
+   - Random Forest
+   - XGBoost
+
+4. **Upload Data**: 
+   - Click "Browse files" to upload your CSV file
+   - Or download the sample CSV file provided in the sidebar
+   - Your CSV should contain the 26 customer features listed above
+
+5. **View Results**: The app will automatically:
+   - Preprocess your data (encoding, imputation, scaling)
+   - Generate predictions
+   - Display prediction metrics and visualizations
+   - Show confusion matrix and classification report (if Response column exists)
+   - Allow you to download results as CSV
+
+6. **Explore Features**:
+   - View data preview and quick statistics
+   - See prediction distribution charts
+   - Analyze model performance metrics
+   - Download predictions with probabilities
+
+### App Features
+
+- ✅ Interactive model selection
+- ✅ Real-time data preprocessing
+- ✅ Comprehensive evaluation metrics (Accuracy, Precision, Recall, F1, MCC, AUC)
+- ✅ Visual confusion matrix with breakdown
+- ✅ Detailed classification report
+- ✅ Prediction probability scores
+- ✅ Downloadable results
+- ✅ Responsive design with collapsible sidebar
 
 ## Author
 

@@ -31,12 +31,20 @@ st.markdown("""
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+    
+    section[data-testid='stSidebar'] [data-testid='stVerticalBlock'] {
+        gap: 0.5rem; /* Adjust this value (e.g., 0rem, 0.25rem) to your preference */
+    }
+    
+    section[data-testid='stSidebar'] > div {
+        padding-top: 1rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 
 # Title
-st.markdown('<p class="main-header">🎯 Marketing Campaign Response Prediction</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">ML Assignment 2 - Vasu Devan S</p>', unsafe_allow_html=True)
+st.markdown('<h1 style="text-align: center; color: #1f77b4;">🎯 Marketing Campaign Response Prediction</h1>', unsafe_allow_html=True)
+st.markdown('<h2 style="text-align: center; color: #666; font-weight: normal;">ML Assignment 2 - Vasu Devan S</h2>', unsafe_allow_html=True)
 
 # Load models
 @st.cache_resource
@@ -66,7 +74,6 @@ if not models:
 
 # Sidebar for model selection
 st.sidebar.markdown("## 🤖 Model Selection")
-st.sidebar.markdown("---")
 
 if models:
     if len(models) != 6:
@@ -94,12 +101,12 @@ else:
 st.sidebar.markdown("---")
 st.sidebar.markdown("## 📁 Upload Data")
 uploaded_file = st.sidebar.file_uploader("Upload your CSV file", type=['csv'], help="Upload test data with customer features")
-st.sidebar.info("👆 Please upload a CSV file to begin prediction.")
+st.sidebar.info("👆 Please upload a CSV file to begin prediction. **Sample File**👇")
 try:
     with open('model/test.csv', 'r') as f:
         sample_csv = f.read()
     st.sidebar.download_button(
-        label="📥 Sample CSV",
+        label="📥 Download Sample CSV",
         data=sample_csv,
         file_name="sample_test.csv",
         mime="text/csv",
@@ -108,7 +115,6 @@ try:
 except:
     pass
 
-st.markdown("---")
 
 # Main processing
 if uploaded_file is not None:
