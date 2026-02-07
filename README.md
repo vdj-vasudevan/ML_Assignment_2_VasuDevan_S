@@ -82,9 +82,9 @@ Six machine learning models were trained and evaluated to predict customer respo
 
 🌐 **Access the live app here:** [Marketing Campaign Prediction App](https://vdj-vasudevan-ml-assignment-2-vasudevan-s-app-jx4vsl.streamlit.app/)
 
-## 🎬 Demo
+🎬 **Demo Available here: **docs/demo.mp4
 <video width="800" controls>
-  <source src="docs/demo.mp4" type="video/mp4">
+  <source src="https://github.com/vdj-vasudevan/ML_Assignment_2_VasuDevan_S/blob/main/docs/demo.mp4" type="video/mp4">
 </video>
 
 ### How to Use the App
