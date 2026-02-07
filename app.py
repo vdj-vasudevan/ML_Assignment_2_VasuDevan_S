@@ -322,9 +322,47 @@ else:
     # Show model information in tabs
     st.markdown("## 📚 About This Application")
     
-    tab1, tab2, tab3 = st.tabs(["🤖 Models", "📊 Data Format", "🎯 Features"])
+    tab1, tab2, tab3, tab4 = st.tabs(["🎯 Objective", "🤖 Models", "📊 Data Format", "🎯 Features"])
     
     with tab1:
+        st.markdown("### 📈 Why This Prediction?")
+        st.markdown("""
+        A response model can provide a **significant boost to marketing campaign efficiency** by increasing responses or reducing expenses. 
+        This application predicts **who will respond to an offer** for a product or service in future marketing campaigns.
+        """)
+        
+        st.markdown("### 🎯 Business Objectives")
+        col1, col2 = st.columns(2)
+        with col1:
+            st.markdown("""
+            **✅ Maximize Profitability**
+            - Target the right customers
+            - Increase response rates
+            
+            **💰 Reduce Costs**
+            - Avoid non-responsive customers
+            - Optimize marketing budget
+            """)
+        with col2:
+            st.markdown("""
+            **🎯 Optimize Resources**
+            - Better ROI on campaigns
+            - Data-driven decisions
+            
+            **👥 Personalize Strategy**
+            - Understand customer behavior
+            - Tailored marketing approaches
+            """)
+        
+        st.markdown("### 📊 Dataset Context")
+        st.info("""
+        **Dataset**: Marketing Campaign Dataset from Kaggle  
+        **Records**: 2,240 customer records with 26 features  
+        **Target**: Binary classification (Response: 0 = No, 1 = Yes)  
+        **Source**: Customer demographics, purchase behavior, and previous campaign responses
+        """)
+    
+    with tab2:
         st.markdown("### Available Machine Learning Models")
         models_info = {
             '📊 Logistic Regression': 'Linear model for binary classification with high interpretability',
@@ -338,7 +376,7 @@ else:
             st.markdown(f"**{model}**  \n{desc}")
             st.markdown("")
     
-    with tab2:
+    with tab3:
         st.markdown("### Expected CSV Format")
         st.markdown("""
         Your CSV should contain customer features:
@@ -351,7 +389,7 @@ else:
         **Optional**: Include 'Response' column (0/1) for model evaluation.
         """)
     
-    with tab3:
+    with tab4:
         st.markdown("### Key Features (26 total)")
         col1, col2 = st.columns(2)
         with col1:
@@ -378,7 +416,7 @@ else:
 st.markdown("---")
 st.markdown("""
 <div style='text-align: center; color: #666; padding: 20px;'>
-    <p><strong>💡 Tip:</strong> For best results, ensure your test data matches the training data format.</p>
+    <p><strong>👈 Tip:</strong> Check the left sidebar for test sample download and file upload options.</p>
     <p>Built with ❤️ using Streamlit | ML Assignment 2 | Vasu Devan S</p>
 </div>
 """, unsafe_allow_html=True)
